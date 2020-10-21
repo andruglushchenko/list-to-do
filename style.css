@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: blue;
+    margin-left: 30px;
+}
+li{
+    width: 300px;
+    color: green;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: solid 1px green;
+    cursor: pointer;
+}
+li:last-of-type{
+    margin-bottom: 50px;
+}
+.selected{
+    color: gold;
+    background-color: firebrick;
+}
+button{
+    background-color: darkturquoise;
+    border: solid 2px grey;
+    border-radius: 5px;
+    margin-left: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}

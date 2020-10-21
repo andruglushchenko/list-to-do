@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>список дел на сегодня</h1>
+    <ul id="ul">
+        <li>сделать зарядку</li>
+        <li>сходить в магазин</li>
+        <li>навестить родителей</li>
+        <li>сходить в спортзал</li>
+        <li>прочитать книгу</li>
+    </ul>
+    <div id="menu">
+        <button data-action="addTaskBefore" id='addTaskBefore'>Добавить задачу в начало</button>
+        <button data-action="addTaskAfter" id='addTaskAfter'>Добавить задачу в конец</button>
+        <button data-action="deleteElements" id='deleteElements'>Удалить выбранные дела</button>
+        <button data-action="sortElements" id='sortElements'>Отсортировать список</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
