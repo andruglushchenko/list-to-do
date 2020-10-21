@@ -46,21 +46,18 @@
             }
             // добавляем задачу в начало
             addTaskBefore() {
-                let addTaskBefore = document.querySelector('#addTaskBefore');
                 let li = document.createElement('li');
                 li.innerHTML = getRandomElem(taskArr);
                 ul.prepend(li)
             }
             // добавляем задачу в конец
             addTaskAfter() {
-                let addTaskAfter = document.querySelector('#addTaskAfter');
                 let li = document.createElement('li');
                 li.innerHTML = getRandomElem(taskArr);
                 ul.append(li)
             }
             // удаляем выбранные елементы с классом selected
             deleteElements() {
-                let deleteElements = document.querySelector('#deleteElements')
                 let allSelectedLi = document.querySelectorAll('.selected');
                 for (let elem of allSelectedLi) {
                     elem.remove()
@@ -68,9 +65,9 @@
             }
             // сортируем выделенные li
             // sortElements() {
-            //     let sortElements = document.querySelector('#sortElements')
-            //     ul.children.sort((a, b) => a.classList.contains(".selected") > b.classList.contains(".selected") ? 1 : -1)
+            //     this.sort((a, b) => a.classList.contains(".selected") > b.classList.contains(".selected") ? 1 : -1)
             // }
+
             onClick(event) {
                 let action = event.target.dataset.action;
                 if (action) {
